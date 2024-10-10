@@ -2298,6 +2298,10 @@ where
         let tick_type = decode_i32(&mut fields_itr)?;
         let value = decode_f64(&mut fields_itr)?;
 
+        if <TickType>::from_i32(tick_type).is_none() {
+            return Ok(());
+        }
+
         self.wrapper
             .lock()
             .expect(WRAPPER_POISONED_MUTEX)
