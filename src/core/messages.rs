@@ -16,10 +16,10 @@ use crate::core::common::{UNSET_DOUBLE, UNSET_INTEGER};
 use crate::core::errors::IBKRApiLibError;
 
 //==================================================================================================
-trait EClientMsgSink {
-    fn server_version(version: i32, time: &str);
-    fn redirect(host: &str);
-}
+// trait EClientMsgSink {
+//     fn server_version(version: i32, time: &str);
+//     fn redirect(host: &str);
+// }
 
 //==================================================================================================
 /// FA msg data types
